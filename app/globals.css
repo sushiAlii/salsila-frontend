@@ -12,6 +12,12 @@
   --primary-color: #32DE84;
   --secondary-color: #87A96B;
 
+  --primary-background-color: #212121;
+  --secondary-background-color: #343434;
+
+  --primary-text-color: white;
+  --secondary-text-color: #C0C0C0;
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -63,32 +69,20 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: background-color 0.6s ease;
+}
+
+button, a {
+  transition: background-color 2.6s ease;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+    --primary-background-color: #212121;
   }
 }
 
