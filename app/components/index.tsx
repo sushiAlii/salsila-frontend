@@ -1,3 +1,4 @@
+import AppHeader from "./AppHeader";
 import LoginButton from "./LoginButton";
 
-export { LoginButton };
+export { AppHeader, LoginButton };
