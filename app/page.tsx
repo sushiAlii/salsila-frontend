@@ -4,14 +4,8 @@ import { LoginButton } from "./components";
 export default function Home() {
   return (
     <main className={styles.heroContent}>
-      {/* <header>SALSILA HEADER</header> */}
       <section className={styles.section}>
         <div className={styles.loginContainer}>
-          {/* <div>
-            <h1>Welcome to Salsila!</h1>
-            <p>Start making your own Salsila!</p>
-          </div> */}
-
           <div>
             <h2>Login or Create an Account</h2>
             <p>Start making your own Salsila!</p>
