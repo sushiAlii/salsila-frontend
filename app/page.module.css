@@ -27,11 +27,10 @@
 .heroContent > section {
   position: relative;
   z-index: 1;
-  color: white;
 }
 
 .loginContainer {
-   background-color: #212121;
+   background-color: var(--primary-background-color);
    width: 40vw;
    height: 100vh;
    position: relative;
@@ -45,7 +44,7 @@
 
 .loginContainer p {
   font-size: 0.95em;
-  color: #C0C0C0;
+  color: var(--secondary-text-color);
 }
 
 .loginForm {
@@ -60,7 +59,7 @@
 }
 
 .loginForm input {
-  background-color: #343434;
+  background-color: var(--secondary-background-color);
   border: none;
   height: 2rem;
   border-radius: 5px;
@@ -90,4 +89,44 @@
 
 .loginForm a {
   color: var(--primary-color);
+}
+
+.loginForm a:hover {
+  color: var(--secondary-color);
+}
+
+.homeHeader {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: gray;
+}
+
+.homeHeader > nav {
+  display: flex;
+  font-weight: 500;
+}
+
+.homeHeader a {
+  padding: 0 3rem 0.25rem 3rem;
+  border-bottom: 1px solid gray;
+  transition: color 1s ease, border-color 1s ease;
+}
+
+.homeHeader a:hover {
+  color: var(--secondary-text-color);
+  border-color: var(--secondary-text-color);
+}
+
+.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color) !important;
+  pointer-event: none;
+  cursor: default;
+}
+
+.active:hover {
+  color: var(--primary-color) !important; 
+  border-color: var(--primary-color) !important;
 }
